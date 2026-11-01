@@ -1,0 +1,28 @@
+/* =========================================
+   Page-specific styles
+   ========================================= */
+
+/* Homepage hero */
+
+.hero {
+    padding: 80px 0;
+    background: var(--color-surface);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    color: var(--color-primary);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: 0 0 28px;
+    color: var(--color-muted);
+    font-size: 1.1rem;
+}

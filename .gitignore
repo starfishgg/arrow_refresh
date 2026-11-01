@@ -1,0 +1,32 @@
+# Jekyll generated output
+_site/
+
+# Jekyll cache and metadata
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby
+*.gem
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE settings
+.vscode/
+.idea/
+
+# Temporary and backup files
+*.tmp
+*.bak
+*~
+
+# Bits I don't want to upload
+_old
+_new

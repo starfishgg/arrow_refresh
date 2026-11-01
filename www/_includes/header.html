@@ -1,0 +1,29 @@
+
+<header class="site-header">
+    <div class="header-inner">
+
+        <a href="{{ '/' | relative_url }}"
+           class="brand-lockup"
+           aria-label="{{ site.title }} — {{ site.desc_short }}">
+
+            <span class="brand-mark-wrap">
+                <img
+                    class="brand-mark"
+                    src="{{ '/assets/images/logo.png' | relative_url }}"
+                    alt="{{ site.title }} — {{ site.desc_short }}"
+                >
+            </span>
+
+            <span class="brand-copy">
+                <span class="brand-name">{{ site.title }}</span>
+                <span class="brand-tagline">
+                    {{ site.desc_short }}
+                </span>
+            </span>
+
+        </a>
+
+        {% include navigation.html %}
+
+    </div>
+</header>
