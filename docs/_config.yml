@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ЕРОУ ООД
-desc_short: Строителен надзор и консултант
+title: "ЕРОУ ООД"
+desc_short: "Строителен надзор и консултант"
 description: >- # this means to ignore newlines until "baseurl:"
-  Строителен надзор, инвеститорски контрол и консултантски услуги.
+  "Строителен надзор, инвеститорски контрол и консултантски услуги."
 
 logo: "/assets/images/logo.png"
-lang: bg
+lang: "bg"
 
 baseurl: "/arrow_refresh" # the subpath of your site, e.g. /blog
 url: "https://starfishgg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
