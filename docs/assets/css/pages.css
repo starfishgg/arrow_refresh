@@ -1,3 +1,4 @@
+
 /* =========================================
    Page-specific styles
    ========================================= */
@@ -26,3 +27,226 @@
     color: var(--color-muted);
     font-size: 1.1rem;
 }
+
+
+/* =========================================
+   Projects page
+   ========================================= */
+
+/* Featured projects */
+
+.project-features {
+    border-top: 1px solid #d9d5e2;
+}
+
+.project-feature {
+    display: grid;
+    grid-template-columns: minmax(230px, 0.85fr) minmax(0, 2.15fr);
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #d9d5e2;
+}
+
+.project-feature-copy {
+    min-width: 0;
+}
+
+.project-number {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 0 0 .5rem;
+    color: #35177d;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.project-number span {
+    color: #8983a5;
+    font-size: .68rem;
+    letter-spacing: .12em;
+}
+
+.project-type {
+    margin: 0 0 .25rem;
+    color: #51418a;
+    font-size: .85rem;
+}
+
+.project-feature-copy h2 {
+    margin: 0 0 .35rem;
+    color: #21164f;
+    font-size: 1.4rem;
+    line-height: 1.25;
+}
+
+.project-description {
+    max-width: 24rem;
+    margin: 0;
+    color: #414052;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.project-photo-caption {
+    margin: .85rem 0 0;
+    color: #77738a;
+    font-family: Georgia, serif;
+    font-size: .75rem;
+    font-style: italic;
+}
+
+.project-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    align-items: center;
+    gap: .75rem;
+    min-width: 0;
+}
+
+.project-photo {
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+}
+
+.project-photo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #d8d6dc;
+    box-shadow: 0 3px 9px rgba(35, 25, 65, .16);
+}
+
+
+/* =========================================
+   Historical projects
+   ========================================= */
+
+.project-history {
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(40, 22, 111, .15);
+}
+
+.history-heading {
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+}
+
+.history-heading .eyebrow {
+    margin: 0 0 .65rem;
+    color: #7566a7;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+}
+
+.history-heading h2 {
+    margin: 0 0 .5rem;
+    color: #28166f;
+    font-size: 1.75rem;
+}
+
+.history-heading p:last-child {
+    color: #555;
+}
+
+.history-list {
+    border-top: 1px solid #e6e3ed;
+}
+
+.history-year {
+    border-bottom: 1px solid #e6e3ed;
+}
+
+.history-year summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem .25rem;
+    color: #28166f;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.history-year summary::-webkit-details-marker {
+    display: none;
+}
+
+.history-year summary::after {
+    content: "+";
+    margin-left: auto;
+    color: #7566a7;
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.history-year[open] summary::after {
+    content: "−";
+}
+
+.history-count {
+    margin-left: auto;
+    color: #777;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.history-year ul {
+    margin: 0;
+    padding: 0 2rem 1.25rem 1.35rem;
+    color: #50505a;
+}
+
+.history-year li {
+    padding: .28rem 0;
+    line-height: 1.6;
+}
+
+.history-note {
+    margin-top: 1.25rem;
+    color: #777;
+    font-size: .82rem;
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   Responsive layout
+   ========================================= */
+
+@media (max-width: 900px) {
+    .project-feature {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-photos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .project-feature {
+        padding: 1.25rem 0;
+    }
+
+    .project-photos {
+        grid-template-columns: 1fr;
+        gap: .6rem;
+    }
+
+    .project-history {
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
+}
+
+
+
+/* Partners page */
+
